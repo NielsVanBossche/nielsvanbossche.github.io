@@ -1,0 +1,57 @@
+  body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+  }
+
+  h1{
+    position: absolute;
+    font-size: 40px;
+    background: #8a2387;
+    background: -webkit-linear-gradient(90deg, #8a2387 0%, #e94057 50%, #f27121 100%);
+    background: linear-gradient(90deg, #8a2387 0%, #e94057 50%, #f27121 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 3%;
+  }
+
+  .setupTitle{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .cards {
+    background: radial-gradient(#c90000, #000000);
+    width: 100%;
+    height: 100%;
+      /* display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+      gap: 20px; 
+      padding: 20px; 
+      justify-items: center; */
+  }
+
+  .setup{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .setup, .cards{
+      opacity: 1;
+      visibility: 1;
+      transition: all ease 0.4s;
+      text-align: center;
+  }
+  .setup.hidden, .cards.hidden{
+      opacity: 0;
+      visibility: 0;
+      transition: all ease 0.4s;
+      pointer-events: none;
+  }
+
+  #spies, #people, #countdownTimer{
+      text-align: center;
+      width: 140px;
+  }
