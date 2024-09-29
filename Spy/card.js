@@ -9,6 +9,7 @@ class Flashcard {
         this.titleBack = this.flashcardElement.querySelector('.title_back');
         this.frontText = this.flashcardElement.querySelector('.text_front');
         this.backText = this.flashcardElement.querySelector('.text_back');
+        this.wordText = this.flashcardElement.querySelector('.word_text');
         this.frontLogo = this.flashcardElement.querySelector('.front_logo');
         this.backLogo = this.flashcardElement.querySelector('.back_logo');
         this.front = this.flashcardElement.querySelector('.front');
@@ -49,6 +50,7 @@ class Flashcard {
                                     <div class="cardtitle title_back"></div>
                                     <div class="cardtext text_back"></div>
                                     <img src="" alt="Logo Back" class="logo back_logo">
+                                    <div class="cardtext word_text"></div>
                                 </div>
                             </div>
                         </div>
@@ -78,6 +80,8 @@ class Flashcard {
         
         this.frontText.innerHTML = this.cardData.frontText.replace(/\r?\n/g, '<br />');
         this.backText.innerHTML = this.cardData.backText.replace(/\r?\n/g, '<br />');
+
+        this.wordText.innerHTML = this.cardData.wordText;
 
         this.frontLogo.src = this.cardData.frontLogo;
         this.backLogo.src = this.cardData.backLogo;

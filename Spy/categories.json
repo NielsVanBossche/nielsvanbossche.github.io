@@ -1,0 +1,10 @@
+{
+  "animals": ["Dog", "Cat", "Elephant", "Lion", "Tiger"],
+  "fruits": ["Apple", "Banana", "Cherry", "Date", "Grapes"],
+  "countries": ["Argentina", "Brazil", "Canada", "Denmark", "Egypt"],
+  "sports": ["Football", "Basketball", "Cricket", "Tennis", "Rugby"],
+  "colors": ["Red", "Blue", "Green", "Yellow", "Purple"]
+}
+
+
+  
